@@ -101,6 +101,6 @@ app.post('/webhook', async (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(4242, () =>
-  console.log(`Node server listening at http://localhost:4242`)
+app.listen(process.env.PORT, () =>
+  console.log(`Node server listening at `, process.env.PORT)
 );
